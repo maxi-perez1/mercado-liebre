@@ -3,6 +3,8 @@ const express = require("express");
 const app = express();
  
 const path = require("path");
+//declarar los recursos img, css etc
+app.use(express.static("public"))
 
 
 //poner a escuchar el servidor
