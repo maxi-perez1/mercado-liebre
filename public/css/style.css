@@ -1,0 +1,351 @@
+* {
+    box-sizing: border-box;
+}
+
+body {
+    font-family: 'Roboto', sans-serif ;
+}
+
+
+.header-principal {
+    background-color: #EAC926;
+    padding: 20px;
+    position: fixed;
+    top: 0px;
+    z-index: 100;
+    width: 100%;
+}
+.header-principal-top {
+    display: flex;
+    flex-wrap: wrap;
+}
+.logo {
+    width: 50%;
+}
+.buscador {
+    width: 50%;
+}
+.buscador input {
+    margin-top: 10px;
+    width: 100px;
+    margin-left: 10px;
+    border-radius: 5px solid;
+}
+.compra {
+    font-weight: 400;
+    text-align: center;
+    font-size: 14px;
+}
+.burger-menu {
+    background-color: #03264c;
+    color: #ffffff;
+    display: block;
+    max-width: 50px;
+    padding: 15px;
+    border-radius: 8px;
+    text-align: center;
+    font-size: 18px;
+    margin: auto;
+}
+.header-principal-bottom {
+    display: none;
+}
+.header-principal-bottom ul {
+    margin: 0;
+    padding: 0;
+}
+.header-principal-bottom a {
+    text-decoration: none;
+    color: #222222;
+    display: inline-block;
+    padding: 5px;
+    font-size: 17px;
+}
+
+
+main {
+    background-color: #ebebeb;
+    display: flexbox;
+}
+.imagen-central {
+    display: flex;
+    flex-direction: column;
+}
+
+.contenedor-producto1 {
+    margin: 15%;
+    background-color: rgb(178, 175, 175);
+    display: flexbox;
+    width: 70%;
+    transition: all 5ms;
+}
+.contenedor-producto1:hover {
+    box-shadow: 2px 2px 4px 0 rgba(0, 0, 0, 0.5);
+}
+.contenedor-imagen {
+    background-color: white;
+    border: solid 1px #ebebeb; 
+    display: flex;
+    flex-direction: column; 
+}
+.descripcion :hover {
+    display: none;
+}
+.descripcion {
+    transition: none 5ms;
+}
+
+.contenedor-descripcion {
+    padding:5px;
+    background-color: white;
+    border: solid 1px #ebebeb;
+    text-align: left;
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+    color: black;
+    font-size: 18px;
+    transition: none 5ms;
+
+}
+
+h2 {
+    text-align: center;
+    font-size: 18 px;
+    color: rgb(48, 47, 47);
+}
+.contenedor-descripcion {
+    position: relative;
+}
+.contenedor-descripcion i{
+    color: #39b54a;
+    border: #39b54a 1px solid;
+    font-size: 16px;
+    width: 30px;
+    height: 30px;
+    background-color: fff;
+    padding: 5px;
+    border-radius:50%;
+    position: absolute;
+    top: -15px;
+    right: 0px;
+    transition: transform 3ms;
+}  
+.contenedor-descripcion i:hover {
+    transform: rotate(-90deg);
+}
+ 
+.precio {
+    padding-left: 12px;
+    font-size: 18px;
+    width: 40%;
+    padding-top: 0px;
+    margin: 0px;
+}
+
+.descuento {
+    font-size: 16px;
+    color: rgb(79, 183, 79);
+    width: 60%;
+    text-align: left;
+    padding-top: 8px;
+    padding-left: 10px;
+}
+.descripcion {
+    display: none;
+    font-size: 16px;
+    color: rgb(155, 153, 153);
+}
+ul {
+    text-align: left;
+}
+
+footer {
+    text-align: center;
+}
+@media (min-width: 361px) {
+    .precio {
+        font-size: 14px;
+        margin: 0px;
+    }
+    .descuento {
+        font-size: 12px;
+        margin: 0px;
+        padding-left: 15px;
+    }
+    .descripcion {
+        display: flex;
+        font-size: 10px;
+        padding-left: 5px;
+        padding: 0px;
+        margin: 0px 5px;
+        width: 100%;
+        color: white;
+        transition: all 5ms;
+    }
+    .descripcion:hover{
+        color: rgb(155, 153, 153);
+    }
+
+
+    .header-principal-top {
+        display: flex;
+        flex-wrap: wrap;
+    }
+    
+    .compra {
+        max-width: 350px;
+        text-align: right;
+    }
+    .burger-menu{
+        display: none;
+    }
+    .header-principal-bottom {
+        display: flex;
+        justify-content: space-between;
+        flex-direction: column;
+    }
+    .header-principal-bottom ul {
+        display: flex;
+        flex-direction: column;
+    }
+    .header-principal-bottom li {
+        margin: 0 3px;
+        flex-direction: column;
+    }
+    .articulos {
+        display: flex;
+        flex-wrap: wrap;
+        padding-left: 10px;
+    }
+    .contenedor-producto1  {
+        width: 40%;
+        margin: 10px 5%;
+        height: 280px;
+    }
+    .contenedor-imagen img {
+        width: auto;
+        height: 200px;
+    }
+   
+    .contenedor-descripcion {
+        margin:0px;
+        padding-top: 15px;
+        display: flex;
+        flex-wrap: wrap;
+        padding: 0px;
+        height: 80px;
+    }
+    .precio-descuento {
+        width: 100%;
+        display: flex;
+        padding: 5px;
+        margin: 5px;
+    }
+    .precio-descuento .precio {
+        font-size: 14px;
+        width: 30%;
+        padding: 0px;
+        margin-right: 30px;
+    }
+    .precio-descuento .descuento {
+        width: 70%;
+        padding: 0px;
+    }
+}
+@media (min-width: 769px) {
+    .logo {
+        padding-top: 10px;
+        width: 300px;
+    }
+    .buscador {
+        width: 400px;
+    }
+    .buscador input {
+        margin-top: 40px;
+        width: 250px;
+        
+    }
+    .header-principal-top {
+        display: flex;
+        justify-content: space-between;
+    }
+    .header-principal-top, .header-principal-bottom {
+        max-width: 1200px;
+        margin: auto;
+    }
+    .compra {
+        margin-top:  40px;
+        max-width: none;
+        font-size: 16px;
+        font-weight: 300;
+        text-align: center;
+    }
+    .header-principal-bottom {
+        padding-top: 30px;
+        display: flex;
+        flex-direction: row;
+    }
+    .header-principal-bottom ul {
+        display: flex;
+        flex-direction: row;
+    }
+    .header-principal-bottom li {
+        margin: 0 10px;
+    }
+    .header-principal-bottom a {
+        font-size: 17px;
+    }
+    section h2 {
+        text-align: left;
+        padding-left: 20px;
+    }
+    .articulos {
+        width: 100%;
+        display: flex;
+    }
+    
+    .contenedor-producto1  {
+        width: 200px;
+        margin: 5px;
+        height: 300px;
+        border:#ebebeb 2px solid;
+
+    }
+    .contenedor-imagen img {
+        width: auto;
+        height: 200px;
+    }
+    .precio {
+        font-size: 14px;
+    }
+    .descripcion, .descuento {
+        font-size: 12px;
+    }
+    .descripcion {
+        margin-bottom: 5px;
+    }
+    
+    .contenedor-descripcion {
+        display: flex;
+        flex-direction: row;
+        height: 96px;
+    }
+    footer section i {
+        font-size: 30px;
+        color: #0b4685;
+    }
+    footer {
+        padding-top: 30px;
+    }
+    footer section {
+        margin-top: 10px;
+    }
+}
+
+
+
+
+
+
+
+
+

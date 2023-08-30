@@ -1,0 +1,83 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Registro</title>
+    <link rel="stylesheet" href="/css/register.css">
+    <script src="https://kit.fontawesome.com/316c0af2a9.js" crossorigin="anonymous"></script>
+</head>
+<body>
+    <header>
+        <div class="header-principal-top">
+        <img src="/images/logo-mercado-liebre.svg" class="logo">
+        <div class="buscador">
+            <input type="text" name="busqueda">
+            <button type="submit"><i class="fa-solid fa-magnifying-glass"></i></button>
+        </div>
+        
+        <h2 class="compra">
+            <i class="fa-solid fa-hand-holding-dollar"></i> 
+            Compra en cuotas y sin tarjetas de credito
+        </h2>
+    </div>
+    </header>
+    <main>
+        <form action="/registro" method="POST">
+
+            <div>
+                <input class="tex-datos" type="text" name ="nombre" placeholder="Nombre y apellido">
+            </div>
+
+            <div>
+                <input class="tex-datos" type="text" name = "usuario" placeholder="Nombre de usuario">
+            </div>
+            
+            <div>
+                <label class="fecha"> Fecha de Nacimiento</label>
+                <input class="tex-datos" type="date" name="fecha" value="" placeholder="mm/dd/yyyy"> 
+            </div>
+           
+            <div>
+                <input class="tex-datos" type="text" name="domicilio" placeholder="Domicilio">
+            </div>
+            
+            <div>
+                <label class="titulo" >Perfil de Usuario</label>
+                <div class="radio">
+                    <label><input type="radio" name="perfil">Vendedor</label>
+                    <label><input type="radio" name="perfil">Comprador</label>
+                </div>
+            </div>
+
+            <div>
+                <label class="titulo" >Intereses</label>
+                <div class="checkbox">
+                    <label><input  type="checkbox" name="intereses">Electro</label>
+                    <label><input  type="checkbox" name="intereses">Moda</label>
+                    <label><input  type="checkbox" name="intereses">Hogar</label>
+                    <label><input  type="checkbox" name="intereses">Jugueteria</label>
+                    <label><input  type="checkbox" name="intereses">Vida sana</label>
+                </div>
+            </div>
+
+            <div class="foto">
+                <label>Seleccione una foto de perfil</label>
+                <input type="file" name="avatar" accept=".jpg">
+            </div>
+
+            <div>
+                <input class="tex-datos" type="password" name="clave" placeholder="Contraseña">
+                <input class="tex-datos" type="password" name="clave" placeholder="Confirmar contraseña">
+            </div>
+
+            <div class="botones">
+                <button type="submit">ENVIAR</button>
+                <button type="reset">Cancelar</button>
+            </div>
+
+        </form>  
+    </main>
+    
+</body>
+</html>

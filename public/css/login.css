@@ -1,0 +1,171 @@
+* {
+    box-sizing: border-box;
+}
+
+body {
+    font-family: 'Roboto', sans-serif ;
+    margin: 0px;
+}
+
+.header-principal-top{
+    background-color: #EAC926;
+    padding: 10px;
+    margin: 0px;
+}
+.header-principal-top {
+    display: flex;
+    flex-wrap: wrap;
+}
+.logo {
+    width: 50%;
+}
+.buscador {
+    width: 50%;
+}
+.buscador input {
+    margin-top: 10px;
+    width: 100px;
+    margin-left: 10px;
+    border-radius: 5px solid;
+}
+.compra {
+    font-weight: 400;
+    text-align: center;
+    font-size: 14px;
+}
+.burger-menu {
+    background-color: #03264c;
+    color: #ffffff;
+    display: block;
+    max-width: 50px;
+    padding: 15px;
+    border-radius: 8px;
+    text-align: center;
+    font-size: 18px;
+    margin: auto;
+}
+footer {
+    text-align: center;
+}
+main {
+    background-color:  #ebebeb;
+    border:#ebebeb 3px solid;
+}
+form div {
+    text-align: center;
+    margin: 30px;
+}
+div input {
+    font-size: 16px;
+    width: 70%;
+    border: #ebebeb 2px solid;
+    padding: 10px;
+}
+.boton-enviar button {
+    font-size: 16px;
+    width: 70%;
+    border-radius: 2px;
+    padding: 10px;
+    transition: all 5ms;
+}
+.boton-enviar button:hover {
+    background-color: #0022AA ;
+    border:  #0022AA 2px solid;
+    color: white;
+}
+footer section i {
+    font-size: 30px;
+    color: #0022AA;
+}
+.footer-top {
+    padding-top: 30px;
+}
+footer .opciones {
+    margin: 10px;
+    display: flex;
+    flex-direction: column;
+}
+@media (min-width: 361px){
+    .header-principal-top {
+        display: flex;
+        flex-wrap: wrap;
+    }
+    
+    .compra {
+        max-width: 350px;
+        text-align: right;
+    }
+    .burger-menu{
+        display: none;
+    }
+    .header-principal-bottom {
+        display: flex;
+        justify-content: space-between;
+        flex-direction: column;
+    }
+    .header-principal-bottom ul {
+        display: flex;
+        flex-direction: column;
+    }
+    .header-principal-bottom li {
+        margin: 0 3px;
+        flex-direction: column;
+    }
+}
+@media (min-width: 769px) {
+    .logo {
+        padding-top: 10px;
+        width: 300px;
+    }
+    .buscador {
+        width: 400px;
+    }
+    .buscador input {
+        margin-top: 40px;
+        width: 250px;
+        
+    }
+    .header-principal-top {
+        display: flex;
+        justify-content: space-between;
+    }
+    .header-principal-top, .header-principal-bottom {
+        max-width: 1200px;
+        margin: auto;
+    }
+    .compra {
+        margin-top:  40px;
+        max-width: none;
+        font-size: 16px;
+        font-weight: 300;
+        text-align: center;
+    }
+    .header-principal-bottom {
+        padding-top: 30px;
+        display: flex;
+        flex-direction: row;
+    }
+    .header-principal-bottom ul {
+        display: flex;
+        flex-direction: row;
+    }
+    .header-principal-bottom li {
+        margin: 0 10px;
+    }
+    .header-principal-bottom a {
+        font-size: 17px;
+    }
+    footer section i {
+        font-size: 30px;
+        color: #0022AA;
+    }
+    .footer-top {
+        padding-top: 30px;
+        display: flex;
+    }
+    footer .opciones {
+        margin: 10px;
+        display: flex;
+        flex-direction: column;
+    }
+}
